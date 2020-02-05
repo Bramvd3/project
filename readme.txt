@@ -1,2 +1,2 @@
 Welcome to the project
-New branch trying to merge!
+New branch trying to conflict!
