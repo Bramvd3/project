@@ -1,6 +1,6 @@
 echo "Welcome, Try to guess how many lines are in this directory!"
 read -p "Enter your guess: " guess
-lines=$(cat readme.md | wc -l)
+lines=$(ls -l | wc -l)
 while [[ $lines -ne $guess ]]
 do
 if [[ $guess -gt $lines ]]
