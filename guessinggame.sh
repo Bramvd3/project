@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo "Welcome, Try to guess how many lines are in this directory!"
 read -p "Enter your guess: " guess
 lines=$(ls -l | wc -l)
