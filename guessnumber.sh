@@ -1,6 +1,7 @@
 echo "Welcome, Try to guess how many lines are in this directory!"
 read -p "Enter your guess: " guess
 lines=$(ls -l | wc -l)
+lines=$lines-1
 while [[ $lines -ne $guess ]]
 do
 if [[ $guess -gt $lines ]]
