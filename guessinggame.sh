@@ -4,7 +4,7 @@ function guessinggame() {
 	directory=$(pwd)
 	echo "The current directory is $directory."
 	read -p "Enter your guess: " guess
-	lines=$(ls -lA | grep -v /)
+	lines=$(ls -lA | grep -v / | wc -l)
 	let lines=$(expr $lines-1)
 	while [[ $lines -ne $guess ]]
 	do
@@ -18,6 +18,6 @@ function guessinggame() {
 	fi
 	done
 	echo "Congratulations, you guessed right!"
-	echo "There are indeed $lines lines in this directory."
+	echo "There are indeed $lines files in this directory."
 }
 guessinggame
